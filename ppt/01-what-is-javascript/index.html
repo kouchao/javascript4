@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../common/css/reveal.css">
+  <link rel="stylesheet" href="../../common/css/theme/black.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <textarea data-template>
+            ## JavaScript高级程序设计
+            ### 第 1 章 什么是 JavaScript
+          </textarea>
+      </section>
+      <section>
+        <section>
+          1995 年，JavaScript 问世。主要用途是代替服务端语言处理输入验证。
+        </section>
+        <section>
+          没有 JavaScript 的年代，要通过服务端语言来处理输入验证，只有提交了才知道是否正确，而且网速感人。
+        </section>
+      </section>
+      <section>
+        <section data-markdown>
+          #### 简短的历史回顾
+        </section>
+        <section>
+          1995年，<span class="fragment highlight-blue">网景</span>公司一位名叫 Brendan Eich 的工程师，开始为即将发布的 Netscape Navigator 2
+          开发一个叫 Mocha（后来改名为 LiveScript）的脚本语言。
+          当时的计划是在客户端和服务器端都使用它，它在服务器端叫 LiveWire。
+        </section>
+        <section>
+          为了赶上发布时间，网景与 <span class="fragment highlight-blue">Sun</span> 公司结为开发联盟，共同完成 LiveScript 的开发。就在 Netscape
+          Navigator 2 正式发布前，网景把 LiveScript 改名为
+          JavaScript，以便搭上媒体当时热烈炒作 Java 的顺风车。
+        </section>
+        <section>
+          由于 JavaScript 1.0 很成功，网景又在 Netscape Navigator 3 中发布了 1.1 版本。尚未成熟的 Web 的受欢迎程度达到了历史新高，而网景则稳居市场领导者的位置。
+        </section>
+        <section>
+          这时候，<span class="fragment highlight-blue">微软</span>决定向 IE 投入更多资源。就在 Netscape Navigator 3 发布后不久，微软发布了
+          IE3，其中包含自己名为 JScript（叫这个名字是为了避免与网景发生许可纠纷）的 JavaScript
+          实现。1996 年 8 月，微软重磅进入 Web 浏览器领域，这是网景永远的痛，但它代表 JavaScript 作为一门语言向前迈进了一大步。
+        </section>
+        <section>
+          微软的 JavaScript 实现意味着出现了两个版本的 JavaScript：Netscape Navigator 中的 JavaScript，以及 IE 中的 JScript。与 C
+          语言以及很多其他编程语言不同，JavaScript 还没有规范其语法或特性的标准，两个版本并存让这个问题更加突出了。随着业界担忧日甚，JavaScript 终于踏上了<span
+            class="fragment highlight-green">标准化</span>的征程。
+        </section>
+
+      </section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from '../../common/js/reveal.esm.js'
+    import Markdown from '../../common/js/markdown.esm.js'
+
+    let deck = new Reveal({
+      plugins: [Markdown]
+    })
+    deck.initialize();
+  </script>
+</body>
+
+</html>

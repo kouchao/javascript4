@@ -1,0 +1,11 @@
+name: deploy ppt
+on:[push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        BRANCH: gh-pages
+        FOLDER: .
